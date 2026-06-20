@@ -1,0 +1,4 @@
+Name: mypod
+Status: Running
+Reason: CrashLoopBackOff
+Message: Back-off 5m0s restarting failed container
