@@ -1,24 +1,33 @@
 from parser import detect_issue
-from analyzer import get_fix
+from analyzer import analyze_error
 
 def run():
-    with open("sample_data/crashloop_describe.txt","r") as f:
-        data = f.read()
+    
+    try:
+        with open("sample_data/unknown_error.txt", "r") as f:
+            data = f.read()
+    except FileNotFoundError:
+        print("Error: File not found!")
+        return
 
+    
     issue = detect_issue(data)
+    
+    
+    issue_to_analyze = issue if issue else data
+    
+    
+    details = analyze_error(issue_to_analyze)
+    
+    print("===========================")
+    print(f"Analysis For: {issue if issue else 'Unknown Issue'}")
+    print(f"Cause: {details['cause']}\n")
+    print("Recommended Fixes:")
+    
 
-    if issue:
-        details = get_fix(issue)
-        print("===========================")
-        print(f"Detected Issue:\n{issue}\n")
-        print(f"Portable Cause:\n{details['cause']}\n")
-        print("Recommended Fixes:")
-        for i, fix in enumerate(details['remediation'], 1):
-            print(f"{i}. {fix}")
-        print("============================")
-
-    else:
-        print("No known issue detected.")
+    for i, fix in enumerate(details['remediation'], 1):
+        print(f"{i}. {fix}")
+    print("============================")
 
 if __name__ == "__main__":
     run()

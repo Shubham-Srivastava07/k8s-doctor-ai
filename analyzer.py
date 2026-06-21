@@ -1,3 +1,5 @@
+import ollama
+
 ISSUE_DATABASE = {
         "CrashLoopBackOff": {
             "cause": "Application repeatedly crashing during startup.",
@@ -32,3 +34,23 @@ ISSUE_DATABASE = {
          }
 def get_fix(issue_name):
     return ISSUE_DATABASE.get(issue_name, None)
+
+def get_ai_suggestion(error_log):
+    print("\n[AI] Rule-based system could not find a fix. Asking AI....")
+    prompt = f"I am a k8s administrator. I have an error: '{error_log}'. Provide a  short, actionable fix in bullet points."
+
+    response = ollama.chat(model='gemma:2b', messages=[
+        {'role': 'user', 'content': prompt}
+    ])
+    return response['message']['content']
+
+def analyze_error(error_log):
+    fix = get_fix(error_log)
+    if fix:
+        return fix
+
+    ai_suggestion = get_ai_suggestion(error_log)
+    return {
+        "cause": "AI Detected Issue",
+        "remediation": [ai_suggestion]
+    }
