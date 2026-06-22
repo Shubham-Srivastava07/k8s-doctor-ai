@@ -1,0 +1,4 @@
+Events:
+  Type     Reason     Age                From               Message
+  Warning  Failed     10s (x3 over 30s)  kubelet, node-01   Failed to pull image "my-repo/app:latest": rpc error: code = NotFound desc = image not found
+  Warning  Failed     10s (x3 over 30s)  kubelet, node-01   Error: ErrImagePull

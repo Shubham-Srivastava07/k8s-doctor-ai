@@ -1,2 +1,10 @@
 Error: database connection failed
 Timeout occured at main.py:45
+
+
+
+NAME                     READY   STATUS             RESTARTS   AGE
+my-app-76d7f9556-abcde   0/1     CrashLoopBackOff   12         5m
+Events:
+  Warning  BackOff   2m (x5 over 4m)  kubelet  Back-off restarting failed container
+  Error: ModuleNotFoundError: No module named 'flask'

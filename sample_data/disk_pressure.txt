@@ -1,0 +1,5 @@
+Events:
+  Type     Reason            Age   From               Message
+  Warning  EvictionThreshold  12m   kubelet, node-01  Attempting to reclaim nodefs
+  Warning  OutOfDisk          12m   kubelet, node-01  Node node-01 disk pressure
+  Warning  FreeDiskSpace      12m   kubelet, node-01  Filesystem usage is at 99%
