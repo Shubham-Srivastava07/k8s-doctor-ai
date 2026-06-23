@@ -146,17 +146,12 @@ k8s-doctor-ai/
 * Fixed dependency issues
 * Connected UI with diagnosis engine
 
----
+### Day 5 ✅
 
-## 🎯 Example Workflow
-
-1. Paste Kubernetes logs
-2. Click Analyze
-3. Detect issue automatically
-4. Generate AI-powered explanation
-5. View recommended fixes
-
----
-
-
+* Dockerized the application
+* Created Dockerfile for containerized deployment
+* Added Docker Compose support
+* Verified application startup inside containers
+* Improved deployment experience
+* Performed project cleanup and dependency validation
 
