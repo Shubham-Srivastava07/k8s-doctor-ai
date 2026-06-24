@@ -158,4 +158,5 @@ k8s-doctor-ai/
 Note:  "Need to test immediately? Check out the sample_data/ folder for pre-written Kubernetes log files to jumpstart your diagnosis."
 
 
+<img width="1368" height="800" alt="Screenshot (483)" src="https://github.com/user-attachments/assets/bde4163a-22c6-4d29-90c5-e6f92a201b0c" />
 
