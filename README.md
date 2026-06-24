@@ -2,7 +2,7 @@
 
 AI-powered Kubernetes Troubleshooting Assistant built using Python, Streamlit, and Ollama.
 
-## 🚀 Overview
+##  Overview
 
 K8s Doctor AI helps DevOps Engineers, Cloud Engineers, and SREs quickly diagnose Kubernetes issues from pod logs and describe outputs.
 
@@ -17,9 +17,9 @@ The project combines rule-based troubleshooting with AI-assisted analysis to pro
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🔍 Kubernetes Issue Detection
+###  Kubernetes Issue Detection
 
 Detects common Kubernetes failures including:
 
@@ -30,7 +30,7 @@ Detects common Kubernetes failures including:
 * CreateContainerError
 * CreateContainerConfigError
 
-### 🧠 AI-Powered Analysis
+###  AI-Powered Analysis
 
 Powered by Ollama to provide:
 
@@ -39,7 +39,7 @@ Powered by Ollama to provide:
 * Human-friendly summaries
 * Recommended remediation steps
 
-### ⚡ Hybrid Diagnosis Engine
+###  Hybrid Diagnosis Engine
 
 The application follows a hybrid approach:
 
@@ -49,7 +49,7 @@ The application follows a hybrid approach:
 4. Generate AI-enhanced explanations using Ollama
 5. Fall back gracefully if AI services are unavailable
 
-### 🎨 Streamlit User Interface
+###  Streamlit User Interface
 
 * Easy-to-use web interface
 * Example Kubernetes logs included
@@ -57,7 +57,7 @@ The application follows a hybrid approach:
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```text
 User Input
@@ -83,7 +83,7 @@ User Input
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 k8s-doctor-ai/
@@ -97,13 +97,12 @@ k8s-doctor-ai/
 ├── README.md
 │
 ├── sample_data/
-│
-└── __pycache__/
+
 ```
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * Python
 * Streamlit
@@ -114,7 +113,7 @@ k8s-doctor-ai/
 
 ---
 
-## 📈 Development Progress
+##  Development Progress
 
 ### Day 1 ✅
 
