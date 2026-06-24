@@ -155,3 +155,7 @@ k8s-doctor-ai/
 * Improved deployment experience
 * Performed project cleanup and dependency validation
 
+Note:  "Need to test immediately? Check out the sample_data/ folder for pre-written Kubernetes log files to jumpstart your diagnosis."
+
+
+
